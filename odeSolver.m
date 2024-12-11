@@ -8,9 +8,9 @@ clear all % This erases the Workspace
 close all % This closes all previous plots
 
 %% Solving Numerically ode45
-x0=100;
-y0=100;
-z0 = 20;
+x0=1;
+y0=1;
+z0 = 0.35;
 
 initialvalues = [x0, y0, z0];
 
@@ -25,9 +25,9 @@ x2 = y(:,2);
 figure(2)
 plot(tspan, x1, tspan, x2,'linewidth',2)
 legend('Alactic Energy', 'Lactic Energy','Location','best')
-title('Small Amount of Work', 'FontSize', 24);         
+title('Large Amount of Work', 'FontSize', 24);         
 set(gca,'FontSize',18)                                                    
 xlabel('Time Step')                                                 
 ylabel('Energy Left') 
-ylim([99 100])
+ylim([0 1.2])
 
