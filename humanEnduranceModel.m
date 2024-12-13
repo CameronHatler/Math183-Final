@@ -29,7 +29,7 @@ eC = 100;  % lactic extra energy activation
 
 %% Hyperparameters
 alpha = 1;  % energy consumed to work done ratio ratio
-epsilon = 0;  % energy trickled back into lactic system
+epsilon = 0.00083;  % energy trickled back into lactic system
 
 % set up
 p = y(1);
